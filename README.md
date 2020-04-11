@@ -49,7 +49,10 @@ There are two environment variables available for configuration:
   If you are running Saleor locally with the default settings, set `API_URI` to: `http://localhost:8000/graphql/`.
 
 - `APP_MOUNT_URI` - URI at which the Dashboard app will be mounted.
-  E.g. if you set `APP_MOUNT_URI` to `/dashboard/`, your app will be mounted at `http://localhost:9000/dashboard/`.
+  E.g. if you set `APP_MOUNT_URI` to `/dashboard/`, your app will be mounted at `http://localhost:{PORT}{APP_MOUNT_URI}`, e.g. `http://localhost:9000/dashboard/`.
+  
+- `PORT` - Port at which the Dashboard app will be mounted.
+  E.g. if you set `PORT` to `9000` (default), your app will be mounted at `http://localhost:{PORT}{APP_MOUNT_URI}`, e.g. `http://localhost:9000/dashboard/`.
 
 ### Development
 
